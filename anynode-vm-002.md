@@ -88,7 +88,7 @@ table System.String.JsonToTable(string jsonData)
 
 
 //运行命令行，传入命令行和最大允许运行时间(单位秒),返回命令行错误和标准输出，如果命令行超过最大允许时间会被主动kill
-(string xResultErr,string xResultData)System.Process.RunCommandWithTimeOut(string cmdLine,int timeout)
+(string xResultErr,string xResultData)System.Process.RunCommandWithTimeOut(int timeout,string cmdLine)
 
 
 ```
