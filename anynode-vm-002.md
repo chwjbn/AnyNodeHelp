@@ -7,6 +7,10 @@ string System.Application.BaseDirectory()
 
 //获取当前应用文件名称
 string System.Application.FileName()
+
+//获取当前应用安装目录
+string System.Application.GetAppInstallDirectory()
+
 ```
 2. 文件目录
 
@@ -34,6 +38,11 @@ bool System.File.FileDelete(string path)
 
 //重命名文件
 bool System.File.FileRename(string oldPath,string newPath)
+
+
+//复制文件
+bool System.File.FileCopy(string srcPath,string desPath)
+
 
 //一次性读取指定path文件的全部文本内容
 string System.File.FileReadAllText(string path)
@@ -123,6 +132,12 @@ string System.Os.SystemInfo()
 
 //以json格式返回当前操作系统负载
 string System.Os.SystemStat()
+
+//获取操作系统名称,windows/linux
+string System.Os.GetOsName()
+
+//sleep
+string System.Os.Sleep(int millSec)
 
 ```
 
